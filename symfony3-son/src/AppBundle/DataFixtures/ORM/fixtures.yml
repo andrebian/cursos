@@ -1,0 +1,5 @@
+AppBundle\Entity\Task:
+    task_{1..25}:
+        name: '<sentence()>'
+        due_date: '<(new \DateTime())>'
+        finished: '<numberBetween(0,1)>'

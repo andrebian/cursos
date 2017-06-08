@@ -1,0 +1,25 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Tasks{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+    <h1>{{ name | upper }}'s tasks</h1>
+
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <a href="{{ path('task-show', {'id': (loop.index)-1}) }}">
+                    {{ task.name }} ({{ task.dueDate | date('Y-m-d') }})
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
