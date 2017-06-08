@@ -1,0 +1,18 @@
+{
+  "name": "andre/symfony3-microkernel",
+  "authors": [
+    {
+      "name": "Andre Cardoso",
+      "email": "andrecardosodev@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/symfony": "^3.3",
+    "sensio/framework-extra-bundle": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
