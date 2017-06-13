@@ -1,0 +1,16 @@
+s\Functional\AppBundle\ApiExampleStatus
+ [x] Status
+
+s\Functional\AppBundle\HomePageActions
+ [x] Show post
+ [x] Click link
+
+s\Unit\AppBundle\Controller\DefaultController
+ [x] Index
+
+s\AppBundle\Entity\User
+ [x] Getters and setters
+
+s\AppBundle\Util\Calculator
+ [x] Add
+
