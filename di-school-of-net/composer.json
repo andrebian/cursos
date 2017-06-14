@@ -1,0 +1,19 @@
+{
+    "name": "vendor/dependency-injection-school-of-net",
+    "description": "Description of project Dependency Injection School Of Net.",
+    "authors": [
+        {
+            "name": "Andre Cardoso",
+            "email": "andrecardosodev@gmail.com"
+        }
+    ],
+    "require": {
+        "pimple/pimple": "dev-master"
+    },
+    "autoload": {
+        "psr-0":{
+            "SON": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
