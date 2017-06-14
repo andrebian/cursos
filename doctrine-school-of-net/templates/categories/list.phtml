@@ -1,0 +1,27 @@
+<?php include __DIR__ . '/../header.html'; ?>
+
+<a href="/categories/create">Criar nova categoria</a>
+<br />
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($categories as $category) : ?>
+            <tr>
+                <td><?php echo $category->getId(); ?></td>
+                <td><?php echo $category->getName(); ?></td>
+                <td>
+                    <a href="/categories/<?php echo $category->getId(); ?>/edit">Editar</a>&nbsp;|&nbsp;
+                    <a href="/categories/<?php echo $category->getId(); ?>/remove">Remover</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+
+<?php include __DIR__ . '/../header.html';

@@ -1,0 +1,12 @@
+<?php include __DIR__ . '/../header.html'; ?>
+
+    <h2>Editar categoria</h2>
+    <form action="/posts/<?php echo $post->getId(); ?>/update" method="POST">
+        <input type="text" name="title" value="<?php echo $post->getTitle(); ?>">
+        <br/><br/>
+        <textarea name="content"><?php echo $post->getContent(); ?></textarea>
+        <br/><br/>
+        <input type="submit" value="Salvar">
+    </form>
+
+<?php include __DIR__ . '/../header.html';
