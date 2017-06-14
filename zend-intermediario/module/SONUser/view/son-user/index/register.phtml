@@ -1,0 +1,14 @@
+<?php if ($this->messages) : ?>
+    <p>
+        <?php echo $this->messages[0]; ?>
+    </p>
+<?php endif; ?>
+
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('sonuser-register'));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();

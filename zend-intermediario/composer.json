@@ -1,0 +1,32 @@
+{
+  "name": "zendframework/skeleton-application",
+  "description": "Skeleton Application for ZF2",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "framework",
+    "zf2"
+  ],
+  "homepage": "http://framework.zend.com/",
+  "require": {
+    "php": ">=5.5",
+    "zendframework/zendframework": "@stable",
+    "doctrine/doctrine-orm-module": "0.9.1",
+    "ircmaxell/random-lib": "^1.1"
+  },
+  "require-dev": {
+    "zendframework/zend-developer-tools": "*",
+    "doctrine/data-fixtures": "1.0.0",
+    "hounddog/doctrine-data-fixture-module": "0.0.3"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "SONBase\\": [
+        "module/SONBase/src/SONBase"
+      ],
+      "SONUser\\": [
+        "module/SONUser/src/SONUser"
+      ]
+    }
+  }
+}
