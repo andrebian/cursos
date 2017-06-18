@@ -1,0 +1,1 @@
+istanbul cover _mocha '*.spec.js' 'mocha/*.spec.js' -x '*.spec.js' -x 'mocha/*.spec.js'
