@@ -22,4 +22,5 @@ Not ordered, it is just the list of items that I need to study
 [ ] Rest
 [ ] Composer Post-Install & Post-Update commands
 [ ] Command
+[ ] Internationalization
 ```
