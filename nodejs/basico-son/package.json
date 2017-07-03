@@ -1,0 +1,11 @@
+{
+  "name": "basico-son",
+  "version": "0.0.1",
+  "description": "Um projeto de estudo",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha tests/**/*.test.js"
+  },
+  "author": "Andre Cardoso",
+  "license": "ISC"
+}
